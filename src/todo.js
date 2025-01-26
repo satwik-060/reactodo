@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
 
-function App() {
+function TodoApp() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState('');
 
   const addTask = () => {
-    if (newTask.trim()) {
+    if (newTask.trim() !== '') {
       setTasks([...tasks, { text: newTask, completed: false }]);
       setNewTask('');
     }
@@ -37,13 +37,13 @@ function App() {
       </div>
       <ul>
         {tasks.map((task, index) => (
-          <li key={index} style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
+          <li key={index}>
+            <p style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>{task.text}</p>
             <input
               type="checkbox"
               checked={task.completed}
               onChange={() => toggleTask(index)}
             />
-            {task.text}
             <button onClick={() => removeTask(index)}>Delete</button>
           </li>
         ))}
@@ -52,4 +52,4 @@ function App() {
   );
 }
 
-export default App;
+export default TodoApp;
