@@ -1,0 +1,44 @@
+.App {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  input[type='text'] {
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  li button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  li button:hover {
+    background-color: darkred;
+  }
+  
+  input[type='checkbox'] {
+    margin-right: 10px;
+  }
+  
