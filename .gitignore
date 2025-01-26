@@ -29,5 +29,8 @@ package.json
 dataconnect/*
 dataconnect-generated/*
 firebase-debug.log 
+.firebase/* 
+firebase.json 
+.firebaserc
 
-
+.github/*
