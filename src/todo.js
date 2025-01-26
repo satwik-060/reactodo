@@ -8,7 +8,7 @@ function App() {
   const addTask = () => {
     if (newTask.trim()) {
       setTasks([...tasks, { text: newTask, completed: false }]);
-      setNewTask('addding');
+      setNewTask('');
     }
   };
 
